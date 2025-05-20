@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+
+<style>
+    h1 {
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        height: 30 px;
+        width: 60%;
+        padding: 5%;
+        
+        background-color:burlywood;
+        
+    }
+    input#radar {
+        padding: 2%;
+        
+    }
+    input#but {
+        padding: 2%;
+        color: white;
+        background:#32CD32;
+    }
+</style>
+
+</head>
+
+<body>
+    <h1>
+        Sistema de Multas
+    </h1>
+    
+    <input type="number" name="radar" id="radar"> 
+    <input type="button" value="Verificar" id="but" onclick="see()">
+    <div id="vel"> 
+
+    </div>
+    <script>
+        function see() {
+var limite1 = window.document.querySelector('input#radar')
+var limite2 = window.document.querySelector('div#vel')
+var conver  = Number(limite1.value)
+vel.innerHTML += `<p>Sua velocidade atual é se ${conver} </p>` 
+ if (conver > 60) {
+    vel.innerHTML += `<p> Você estar MULTADO</p>`
+ }
+ vel.innerHTML  += '<p> Dirija sempre com o cinto de segurança</p>'
+ 
+        }
+        
+    </script>
+</body>
+</html>
