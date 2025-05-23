@@ -6,6 +6,34 @@
     <title>NATIVO OU GRIMGO</title>
 </head>
 <body>
+    <h1>
+        SISTEMA DE IDENTIFICAÇÃO
+        <h3>De onde voçê é? </h3>
+    </h1>
+    <input type="text" name="nacionalidade" id="nacionalidade">
+    <input type="button" value="Pesquisar"  id="nativo" onclick="pesquisar()">
+        <div id="msg">
+
+    </div>
+    <script>
+
+        
+        function pesquisar() {
+             var pessoa1 = window.document.querySelector('#nacionalidade');
+        var menseger = window.document.querySelector('#msg');
+        var nacionalidade = pessoa1.value.toLowerCase();
+        
+    if (nacionalidade  !== 'brasil') {
+        menseger.innerHTML =  `Sinta-se em casa! O Brasil é mais bonito com você aqui.`}
+        else {
+            menseger.innerHTML = "BEM-VINDO(A) DE VOLTA"}
     
+       
+     
+            
+
+        }
+
+    </script>
 </body>
 </html>
